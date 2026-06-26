@@ -1,0 +1,15 @@
+export const ROUTES = {
+  LANDING: '/',
+  LOGIN: '/login',
+  REGISTER: '/register',
+  DASHBOARD: '/dashboard',
+  MEETINGS: '/meetings',
+  MEETING_DETAILS: '/meetings/:id',
+  meetingDetails: (id) => `/meetings/${id}`,
+  ASSISTANT: '/assistant',
+  WORKSPACE: '/workspace',
+  ANALYTICS: '/analytics',
+  TASKS: '/tasks',
+  NOTIFICATIONS: '/notifications',
+  SETTINGS: '/settings',
+};

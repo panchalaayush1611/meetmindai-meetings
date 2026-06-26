@@ -1,0 +1,19 @@
+import { Provider } from 'react-redux';
+import { BrowserRouter } from 'react-router-dom';
+import { store } from './redux/store';
+import { ThemeProvider } from './context/ThemeContext';
+import AppRoutes from './routes/AppRoutes';
+
+function App() {
+  return (
+    <Provider store={store}>
+      <ThemeProvider>
+        <BrowserRouter>
+          <AppRoutes />
+        </BrowserRouter>
+      </ThemeProvider>
+    </Provider>
+  );
+}
+
+export default App;
